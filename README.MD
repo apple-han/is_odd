@@ -23,4 +23,7 @@ fmt.Println(f); //=> false
 
 g, _ := is_odd.IsOdd("-3");
 fmt.Println(g); //=> true
+
+_, err := is_odd.IsOdd("9999999999999999999999999999999999999");
+fmt.Printf("err value:%s", err.Error()); //=> value out of range
 ```

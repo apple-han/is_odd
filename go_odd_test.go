@@ -1,6 +1,8 @@
 package is_odd
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestIsOdd(t *testing.T) {
 	r, _ := IsOdd(0)
@@ -57,6 +59,14 @@ func TestIsOdd(t *testing.T) {
 		t.Errorf("result should have %v "+
 			";but had %v", expect, r)
 	}
+
+	// r, err := IsOdd("-39999999999999999999999999999999999999")
+	// fmt.Printf("err value is:%s", err.Error())
+	// expect = true
+	// if expect != r {
+	// 	t.Errorf("result should have %v "+
+	// 		";but had %v", expect, r)
+	// }
 
 	// _, err := IsOdd("hello")
 	// if err != nil {
